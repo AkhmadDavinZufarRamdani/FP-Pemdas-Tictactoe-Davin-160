@@ -183,7 +183,9 @@ MainMenuFrame
  ├── Statistics → StatisticsFrame
  ├── Top 5 Scorers → TopScorersFrame
  └── Exit
+```
 
+---
 #  Screenshots
 
 ## Login
