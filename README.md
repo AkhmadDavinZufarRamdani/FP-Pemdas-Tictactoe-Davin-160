@@ -13,7 +13,7 @@
 
 ## Project Description
 
-This project is a desktop-based Tic-Tac-Toe game developed using **Java Swing** and **PostgreSQL**. The application provides a login system connected to a database, personal game statistics tracking, and a Top 5 leaderboard system.
+This project is a desktop-based Tic-Tac-Toe game developed using **Java Swing** and **mySQL**. The application provides a login system connected to a database, personal game statistics tracking, and a Top 5 leaderboard system.
 
 The player plays as **X** against a computer opponent (**O**). Game results are automatically stored in the database, including wins, losses, draws, and score updates.
 
@@ -21,12 +21,12 @@ The player plays as **X** against a computer opponent (**O**). Game results are 
 
 ##  Features
 
--  Login using PostgreSQL database
+-  Login using mySQL database
 -  Play Tic-Tac-Toe against a computer opponent
 -  Record wins, losses, draws, and scores automatically
 -  Display personal statistics
 -  Display Top 5 players sorted by score and wins
--  JDBC integration with PostgreSQL
+-  JDBC integration with mySQL
 -  Java Swing graphical user interface
 
 ---
@@ -42,7 +42,7 @@ The player plays as **X** against a computer opponent (**O**). Game results are 
 ---
 ##  Database
 
-**Database Used:** PostgreeSQL
+**Database Used:** mySQL
 
 ### Create Database
 
@@ -84,17 +84,17 @@ VALUES ('student2', '12345');
 
 ##  How to Run
 
-### 1. Start PostgreSQL
+### 1. Start mySQL
 
-Make sure PostgreSQL service is running.
+Make sure mySQL service is running.
 
 ### 2. Create Database
 
 Execute the SQL commands above.
 
-### 3. Download PostgreSQL JDBC Driver
+### 3. Download mySQL JDBC Driver
 
-https://jdbc.postgresql.org/
+https://jdbc.mySQL.org/
 
 ### 4. Add Driver to Project
 
@@ -104,7 +104,7 @@ Add the JDBC `.jar` file into your project's classpath.
 
 ```java
 private static final String URL =
-        "jdbc:postgresql://localhost:5432/tictactoe1";
+        "jdbc:mySQL://localhost:5432/tictactoe1";
 
 private static final String USER =
         "postgres";
@@ -159,7 +159,7 @@ src
 | Class | Responsibility |
 |-------|----------------|
 | Main | Entry point of the application |
-| DatabaseManager | Handles JDBC connection to PostgreSQL |
+| DatabaseManager | Handles JDBC connection to mySQL |
 | Player | Stores player information |
 | PlayerService | Handles login, statistics updates, and leaderboard queries |
 | GameLogic | Handles game rules and computer moves |
@@ -225,5 +225,5 @@ MainMenuFrame
 - Java
 - Java Swing
 - JDBC
-- PostgreSQL
+- mySQL
 - IntelliJ IDEA
