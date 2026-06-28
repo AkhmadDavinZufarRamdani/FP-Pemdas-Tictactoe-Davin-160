@@ -227,3 +227,9 @@ MainMenuFrame
 - JDBC
 - mySQL
 - IntelliJ IDEA
+
+#  Demo Video
+
+Watch the full demonstration here:
+
+[![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch%20Demo-red?logo=youtube)](https://youtu.be/oLGbI9bWdC8)
